@@ -1,0 +1,30 @@
+[
+    {
+        "partyId": 1,
+        "name": "Party 1",
+        "host": "S-club 7",
+        "pinReq": false,
+        "pin": ""
+    },
+        {
+        "partyId": 2,
+        "name": "Party 2",
+        "host": "Dominic",
+        "pinReq": false,
+        "pin": ""
+    },
+        {
+        "partyId": 3,
+        "name": "Party 3",
+        "host": "MC Hammer",
+        "pinReq": true,
+        "pin": "PIN3"
+    },
+        {
+        "partyId": 4,
+        "name": "Party 4",
+        "host": "Ben",
+        "pinReq": true,
+        "pin": "PIN4"
+    }
+]

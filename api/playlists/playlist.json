@@ -1,0 +1,30 @@
+[
+    {
+        "songId": 1,
+        "songName": "Reach for the stars",
+        "artistName": "S-club 7",
+        "playLength": "346",
+        "spotifyURI": "fakeURI1"
+    },
+    {
+        "songId": 2,
+        "songName": "Never gonna give you up",
+        "artistName": "Rick Astley",
+        "playLength": "222",
+        "spotifyURI": "fakeURI2"
+    },
+    {
+        "songId": 3,
+        "songName": "Song 2",
+        "artistName": "Blur",
+        "playLength": "375",
+        "spotifyURI": "fakeURI3"
+    },
+    {
+        "songId": 4,
+        "songName": "Boom Boom Boom Boom",
+        "artistName": "Venga Boys",
+        "playLength": "8008",
+        "spotifyURI": "fakeURI4"
+    }
+]

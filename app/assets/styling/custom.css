@@ -1,0 +1,22 @@
+.ng-valid[required] {
+  border-left: 5px solid #42A948;
+}
+
+.ng-invalid {
+  border-left: 5px solid #a94442;
+}
+
+.btn-colour, .btn-thick{
+  color: #ffffff;
+  background-color: #009933;
+  border-color: #006622;
+}
+
+.btn-thick {
+  line-height: 250px;
+  font-size: 50px;
+  border-radius: 8px;
+  width:250px;
+  height:250px;
+  margin-bottom: 10px;
+}

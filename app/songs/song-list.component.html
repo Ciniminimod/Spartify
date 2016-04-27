@@ -1,0 +1,30 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        {{pageTitle}}
+    </div>
+    <div class='panel-body'>
+        <div class='table-responsive'>
+            <table class='table' *ngIf='songs && songs.length'>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Length</th>
+                        <th>URI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='#song of songs'>
+                        <td>{{ song.songName }} </td>
+                        <td>{{ song.artistName }} </td>
+                        <td>{{ song.playLength }} </td>   
+                        <td>{{ song.spotifyURI }} </td>                     
+                    </tr>
+                </tbody>
+            </table>
+            <div id="JSON">
+                {{json}}
+            </div>
+        </div>
+    </div>
+</div>

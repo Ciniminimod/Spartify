@@ -1,0 +1,30 @@
+<form>
+    <div class="form-group">
+        <label for="partyRoom">Room Name</label>
+        <input type="text" class="form-control" id="partyRoom" placeholder="YourPartyName" required [(ngModel)]="model.name">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" id="pinReq"[(ngModel)]="model.pinReq"> Require PIN?
+        </label>
+    </div>
+    <div class="form-group">
+        <label for="partyPin">PIN</label>
+        <input type="text" class="form-control" id="partyPin" placeholder="PartyPin1234" [(ngModel)]="model.pin">
+    </div>
+    <input class="hidden" type="text" value="PlaceHolderHost" [(ngModel)]="model.host">
+    <button type="submit" class="btn btn-default">Create Party!</button>
+    
+    <p>
+        name = {{model.name}}
+    </p>
+    <p>
+        pinReq = {{model.pinReq}}
+    </p>
+    <p>
+        pin = {{model.pin}}
+    </p>
+    <p>
+        host = {{model.host}}
+    </p>
+</form>

@@ -1,0 +1,27 @@
+<form (ngSubmit)="onSubmit()" #partyForm="ngForm">
+    <div class="form-group">
+        <label for="partyRoom">Room Name</label>
+        <input type="text" class="form-control" id="partyRoom" placeholder="YourPartyName" required [(ngModel)]="model.name" ngControl="name" >
+    </div>
+    <div class="form-group">
+        <label for="partyPin">PIN</label>
+        <input type="text" class="form-control" id="partyPin" placeholder="PartyPin1234" [required]="model.pinReq" [(ngModel)]="model.pin" ngControl="pin" #pin="ngForm">
+        <div [hidden]="pin.valid || pin.pristine" class="alert alert-danger"> The party host has set a PIN for this party! </div>
+    </div>
+    <button type="submit" class="btn btn-default" [disabled]="!partyForm.form.valid" >Join The Party!</button>
+    <p>
+        name = {{model.name}}
+    </p>
+    <p>
+        pinReq = {{model.pinReq}}
+    </p>
+    <p>
+        pin = {{model.pin}}
+    </p>
+    <p>
+        host = {{model.host}}
+    </p> 
+    <p>
+        submitted = {{submitted}}
+    </p>
+</form>
