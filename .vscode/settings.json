@@ -1,0 +1,14 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.exclude": {
+        "node_modules/": true,
+        "**/.git": true,
+        "**/*.js": {"when": "$(basename).ts"},
+        "**/*.map": true,
+        "typings": true,
+        "typings.json":true,
+        "tsconfig.json":true
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 5000
+}
